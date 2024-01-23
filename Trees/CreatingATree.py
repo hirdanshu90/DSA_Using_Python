@@ -13,7 +13,7 @@ class Tree:
 
   
 
-# Creating a function to insert values into the tree. 
+# Creating a function to insert values into the tree in an RECURSIVE fashion ............
   def insert(self, node, data):
 
   # If initial node is None, we will create a new node.

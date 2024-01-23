@@ -4,7 +4,9 @@ In the context of tree traversal, there are three common methods to print values
 
 tree = [5,2,9, .....]
 
-CAN identify based on the root location:  if first then PreOrder, if in middle then In Order, if at last then PostOrder
+CAN identify based on the root location:  if first then PreOrder, if in middle then In Order, if at last then PostOrder. 
+
+EXAMPLE shown in the recursive manner. 
 
 1. **In-Order Traversal:**
    - Traverse the left subtree.
