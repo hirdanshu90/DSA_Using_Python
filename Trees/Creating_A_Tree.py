@@ -36,11 +36,16 @@ class Tree:
 # Writing a recursive function.
   
   def traverse_Inorder (self,root):
-    if root is not None:
-      self.traverse_Inorder(root.left)
-      # End used to print in the single line format.
-      print(root.data, end=' ')
-      self.traverse_Inorder(root.right)
+
+    # Base condition.
+    if root is None:
+      return 
+    
+    self.traverse_Inorder(root.left)
+    # End used to print in the single line format.
+    print(root.data, end=' ')
+    self.traverse_Inorder(root.right)
+      
 
  # Height of BT
   def height(self,root):
@@ -57,7 +62,6 @@ class Tree:
 # Creating an object for tree
 tree = Tree()
 root = tree.createNode(5)
-print(root.data)
 
 
 # Now inserting data in the tree

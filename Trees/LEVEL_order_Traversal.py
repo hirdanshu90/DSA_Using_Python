@@ -2,7 +2,7 @@
 
 def levelOrder(root):
 
-    # Queue
+    # Queue, FIFO property used here......
     q = []
     
     # Adding the root node

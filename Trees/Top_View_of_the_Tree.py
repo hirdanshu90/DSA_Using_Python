@@ -11,6 +11,8 @@ class Node:
 
 
 def topView(root):
+    
+    # queue, FIFO property used here.....
     q = []
     d = dict()
     
