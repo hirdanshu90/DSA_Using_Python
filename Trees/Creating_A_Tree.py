@@ -38,14 +38,21 @@ class Tree:
   def traverse_Inorder (self,root):
     if root is not None:
       self.traverse_Inorder(root.left)
-      print(root.data)
+      # End used to print in the single line format.
+      print(root.data, end=' ')
       self.traverse_Inorder(root.right)
 
-
+ # Height of BT
+  def height(self,root):
+    if root is None:
+      return -1
+    # Recursively finding the height of the tree, 
+    return max(self.height(root.left), self.height(root.right)) + 1
+    
 
 
 # Now inserting data in the tree
-#  [5,2,10,7,15,12,20,30,6,8]
+# [5,2,10,7,15,12,20,30,6,8]
 
 # Creating an object for tree
 tree = Tree()
@@ -66,3 +73,8 @@ tree.insert(root,8)
 
 print("Inorder -->")
 tree.traverse_Inorder(root)
+
+print()
+
+print('height - ')
+print(tree.height(root))

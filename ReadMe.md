@@ -1,3 +1,13 @@
+
+
+DIFFERENCES:
+
+Binary Tree: A binary tree is a hierarchical data structure where each node has at most two children, referred to as the left child and the right child.
+
+Binary Search Tree (BST): A binary search tree is a specific type of binary tree in which the left child of a node contains only nodes with values less than the node's value, and the right child contains only nodes with values greater than the node's value.
+
+
+
 Printing values in the tree. 
 
 In the context of tree traversal, there are three common methods to print values:
@@ -6,7 +16,7 @@ tree = [5,2,9, .....]
 
 CAN identify based on the root location:  if first then PreOrder, if in middle then In Order, if at last then PostOrder. 
 
-EXAMPLE shown in the recursive manner. 
+NOTE: EXAMPLE shown in the recursive manner. 
 
 1. **In-Order Traversal:**
    - Traverse the left subtree.
