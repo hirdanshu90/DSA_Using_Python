@@ -6,7 +6,7 @@ Binary Tree: A binary tree is a hierarchical data structure where each node has 
 
 Binary Search Tree (BST): A binary search tree is a specific type of binary tree in which the left child of a node contains only nodes with values less than the node's value, and the right child contains only nodes with values greater than the node's value.
 
-- - - - - - - - - - - Below are the Tree traversals through DFS using recursion - - - - - - - - - - 
+- - - - - - Below are the Tree traversals through DFS using recursion - - - - - - - 
 
 Printing values in the tree. 
 
@@ -80,3 +80,33 @@ USES: So, in simple terms, preorder traversal helps in creating a copy of a tree
 USES: In simple terms, postorder traversal is useful for safely deleting a tree because it allows you to deallocate memory in a systematic manner, starting from the bottom nodes. Additionally, it helps in obtaining postfix expressions from expression trees by visiting nodes in a specific order.
 
 These three traversal methods provide different orders in which the nodes of the tree are visited and, consequently, different sequences of values are printed. The choice of traversal method depends on the requirements of the specific problem you are solving.
+
+
+........... HIGHER and LOWER levels in the tree..............
+
+
+In the context of a tree structure, "higher" and "lower" levels refer to the distance of a particular node from the root of the tree.
+
+1. **Higher Level**:
+   - Nodes that are closer to the root of the tree are considered to be at higher levels.
+   - The root node itself is at the highest level because it is the starting point of the tree.
+
+2. **Lower Level**:
+   - Nodes that are farther away from the root, deeper into the tree, are considered to be at lower levels.
+   - As you move down the tree from the root, each subsequent level represents nodes that are further away from the root.
+
+For example, consider a simple binary tree:
+
+```
+       A             <- Level 1 (Root)
+     /   \
+    B     C         <- Level 2
+   / \   / \
+  D   E F   G       <- Level 3
+```
+
+- In this tree, node A is at level 1 because it's the root.
+- Nodes B and C are at level 2 because they are directly below the root.
+- Nodes D, E, F, and G are at level 3 because they are one level below nodes B and C.
+
+So, when we talk about visiting nodes in "lower levels before higher levels" during level order traversal, we mean that we visit nodes closer to the root first and then proceed to nodes deeper into the tree.
