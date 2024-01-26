@@ -20,3 +20,5 @@ def maxDepth(self, root: Optional[TreeNode]) -> int:
         
 # Here we calculate the number of levels == Depth of the Tree. 
 # We solve BFS by using Queue data structure.
+
+# Here since we are not printing all the nodes or counting, we run a for loop inside to remove all the nodes at a certain level all at once, so that it is counted as 1 level and not separately.
