@@ -1,4 +1,7 @@
 # We need to print the nodes level by level. We process each level from left to right. 
+# Level Order Traversal technique is defined as a method to traverse a Tree such that all nodes present in the same level are traversed completely before traversing the next level.
+
+# Level Order Traversal (Breadth First Search or BFS) of Binary Tree
 
 def levelOrder(root):
 
@@ -23,5 +26,7 @@ def levelOrder(root):
             
         if root.right is not None:
             q.append(root.right)
-    
+
+# Time Complexity: O(N) where N is the number of nodes in the binary tree.
+# Auxiliary Space: O(N) where N is the number of nodes in the binary tree.
    
