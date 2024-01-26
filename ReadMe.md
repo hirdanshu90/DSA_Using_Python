@@ -6,7 +6,7 @@ Binary Tree: A binary tree is a hierarchical data structure where each node has 
 
 Binary Search Tree (BST): A binary search tree is a specific type of binary tree in which the left child of a node contains only nodes with values less than the node's value, and the right child contains only nodes with values greater than the node's value.
 
-Below are the Tree traversals through DFS using recursion:
+- - - - - - - - - - - Below are the Tree traversals through DFS using recursion - - - - - - - - - - 
 
 Printing values in the tree. 
 
