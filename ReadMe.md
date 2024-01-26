@@ -6,7 +6,7 @@ Binary Tree: A binary tree is a hierarchical data structure where each node has 
 
 Binary Search Tree (BST): A binary search tree is a specific type of binary tree in which the left child of a node contains only nodes with values less than the node's value, and the right child contains only nodes with values greater than the node's value.
 
-
+Below are the Tree traversals through DFS using recursion:
 
 Printing values in the tree. 
 
@@ -36,6 +36,13 @@ NOTE: EXAMPLE shown in the recursive manner.
            print_in_order(node.right)
    ```
 
+Time Complexity: O(N)
+Auxiliary Space: O(log N)
+
+USES: if you want to get the nodes of a BST in non-increasing order, you simply perform a reversed inorder traversal where you start from the right subtree, visit the current node, and then move to the left subtree. This way, you'll get the nodes from largest to smallest.
+
+
+
 2. **Pre-Order Traversal:**
    - Visit the root node.
    - Traverse the left subtree.
@@ -51,6 +58,10 @@ NOTE: EXAMPLE shown in the recursive manner.
            print_pre_order(node.right)
    ```
 
+USES: So, in simple terms, preorder traversal helps in creating a copy of a tree by following a specific order of visiting nodes, and it also helps in obtaining prefix expressions from expression trees by visiting the nodes in a particular order.
+
+
+
 3. **Post-Order Traversal:**
    - Traverse the left subtree.
    - Traverse the right subtree.
@@ -65,5 +76,7 @@ NOTE: EXAMPLE shown in the recursive manner.
            print_post_order(node.right)
            print(node.value)
    ```
+
+USES: In simple terms, postorder traversal is useful for safely deleting a tree because it allows you to deallocate memory in a systematic manner, starting from the bottom nodes. Additionally, it helps in obtaining postfix expressions from expression trees by visiting nodes in a specific order.
 
 These three traversal methods provide different orders in which the nodes of the tree are visited and, consequently, different sequences of values are printed. The choice of traversal method depends on the requirements of the specific problem you are solving.
