@@ -19,6 +19,14 @@ QUESTION : Exercise: Which traversal should be used to print leaves of Binary Tr
  - The level of the root is 0
  - The Maximum number of nodes in a binary tree of height ‘h’ is 2h – 1:  Note: Here the height of a tree is the maximum number of nodes on the root-to-leaf path. The height of a tree with a single node is considered as 1
 
+
+Both ARE same : 
+- if node:
+- if node is not None:
+
+
+
+
 ................ TYPES of Binary Tree .................
 
 Binary trees can be classified into various types based on their structure, properties, and usage. Here are some common types of binary trees with examples:

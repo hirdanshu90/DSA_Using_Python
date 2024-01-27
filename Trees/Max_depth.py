@@ -1,22 +1,22 @@
 # Max depth/height measures the maximum downward distance from the root to a leaf.
-(Basically max number of nodes along the way so we add 1, when doing recurrsively.)
+# (Basically max number of nodes along the way so we add 1, when doing recurrsively.)
 
 # .......... Can be solved using 3 approaches........
 
 
-# APPROACH 1 : Recurrsive DFS
+# APPROACH 1 : Recursive DFS
 
-   class Solution:
-        def maxDepth(self, root: Optional[TreeNode]) -> int:
-        
-                # Base Case
-                if root is None: 
-                    return 0
-        
-                return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    
+            # Base Case
+            if root is None: 
+                return 0
+    
+            return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 
 
-# APPROACH 2 : Without Recurrsion: BFS Iteratively: ( Level Order Solution )
+# APPROACH 2 : BFS Iteratively: ( Level Order Solution )
         
 # Here we calculate the number of levels == Depth of the Tree. 
 # We solve BFS by using Queue data structure.
@@ -53,6 +53,30 @@ class Solution:
         return level
 
 
-# APPROACH 3 : Without Recurrsion: DFS Iteratively: ( Level Order Solution )
+# APPROACH 3 : DFS Iteratively: ( Level Order Solution )
+    
 # Doing PREorder DFS using stack data structure.
-        
+    
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+            
+        if not root:
+            return 0
+                
+        # Maintaining Node and depth in the stack
+        stack = [[root,1]]  # Initialize a stack with the root node and its depth
+        res = 1             # Initialize the maximum depth as 1
+
+        while stack:
+
+            node, depth = stack.pop(0)  # Pop the node and its depth from the stack
+            print(node)
+            print("depth = ", depth)
+
+            # This if statement will prevent from using None node, if they are present in the Stack .. ....
+            if node is not None:
+                res = max(res,depth)    # Update the maximum depth if necessary
+                stack.append([node.left, depth+1])   # Add the left child and its depth to the stack
+                stack.append([node.right, depth+1])  # Add the right child and its depth to the stack
+
+        return res
