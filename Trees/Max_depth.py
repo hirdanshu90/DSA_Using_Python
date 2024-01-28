@@ -53,12 +53,12 @@ class Solution:
         return level
 
 
-# APPROACH 3 : DFS Iteratively: ( Level Order Solution )
+# APPROACH 3 : DFS Iteratively: 
     
 # Doing PREorder DFS using stack data structure.
     
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def maxDepth(root) -> int:
             
         if not root:
             return 0
@@ -70,8 +70,6 @@ class Solution:
         while stack:
 
             node, depth = stack.pop(0)  # Pop the node and its depth from the stack
-            print(node)
-            print("depth = ", depth)
 
             # This if statement will prevent from using None node, if they are present in the Stack .. ....
             if node is not None:
