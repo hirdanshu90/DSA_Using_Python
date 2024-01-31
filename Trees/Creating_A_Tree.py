@@ -45,6 +45,16 @@ class Tree:
     # End used to print in the single line format.
     print(root.data, end=' ')
     self.traverse_Inorder(root.right)
+
+# If want to print inside an array, we do like this:
+    def inOrder_dfs(root):
+        if root is None:
+            return []
+
+        # Perform inorder traversal recursively
+        left = inOrder_dfs(root.left)
+        result = left + [root.val] + inOrder_dfs(root.right)
+        return result
       
 
  # Height of BT
