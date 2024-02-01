@@ -69,6 +69,8 @@ class Solution:
 
         while stack:
 
+
+            # WHENEVER we will encounter a NULL node, we will pop the element off the stack, else, we will add to the stack SIMPLE.
             node, depth = stack.pop(0)  # Pop the node and its depth from the stack
 
             # This if statement will prevent from using None node, if they are present in the Stack .. ....

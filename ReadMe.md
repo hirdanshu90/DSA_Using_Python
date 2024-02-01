@@ -28,13 +28,25 @@ NOTE: EXAMPLE shown in the recursive manner.
 
 
    CODE: 
-   ```python
-   def print_in_order(node):
-       if node is not None:
-           print_in_order(node.left)
-           print(node.value)
-           print_in_order(node.right)
-   ```
+   
+# Function for In_Order traversal, that will store the values in the array, and return that, so that we can perform actions on it.
+   def In_order(root, values):
+
+      if root is None:
+         return 
+      
+      In_order(root.left, values)
+      values.append(root.data)
+      In_order(root.right, values)
+         
+   
+   
+   values = []
+   In_order(root, values)
+   for i in range(len(values)-1):
+      if values[i+1] <= values[i]:
+         return False
+   return True
 
 Time Complexity: O(N)
 Auxiliary Space: O(log N)
