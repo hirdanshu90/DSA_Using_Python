@@ -18,7 +18,9 @@ class Solution:
         Returns:
         - Optional[TreeNode]: The root of the constructed binary tree.
         """
-
+        # However, in Python, lists are not None by default. Instead, they may be empty lists []. 
+        # Therefore, the base case should be modified to check for empty lists rather than None.
+        
         # Base case: Check if either preorder or inorder lists are empty
         if not preorder or not inorder:
             return None
