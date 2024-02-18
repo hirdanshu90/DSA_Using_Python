@@ -1,5 +1,5 @@
 # Max depth/height measures the maximum downward distance from the root to a leaf.
-# (Basically max number of nodes along the way so we add 1, when doing recurrsively.)
+# (Basically max number of nodes along the way so we add 1, when doing recursively.)
 
 # .......... Can be solved using 3 approaches........
 
