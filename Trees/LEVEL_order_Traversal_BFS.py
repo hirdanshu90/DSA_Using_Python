@@ -42,7 +42,7 @@ def levelOrder(root):
 
 # But if we want to print the values like level by level in separate arrays then: 
 class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def levelOrder(self, root):
 
         if root is None:
             return []
