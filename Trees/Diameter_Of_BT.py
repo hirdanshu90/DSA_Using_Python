@@ -3,6 +3,7 @@
 # The length of a path between two nodes is represented by the number of edges between them.
 
 #  We calculate the height of each node. H = 1 + max(left,right) 
+
 #  Then diameter is =  Height_left + Height_right.   
 
 class Solution:
@@ -12,7 +13,7 @@ class Solution:
         # Using a list with a single element allows the code to maintain a mutable reference to the diameter value, enabling updates to it within the recursive function.
         res = [0]
 
-        def dfs(root):
+        def dfs(root):  
 
             if root is None:
                 return 0

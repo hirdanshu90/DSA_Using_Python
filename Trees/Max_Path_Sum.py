@@ -7,6 +7,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Question is from any node to any node.........
+
 class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
 

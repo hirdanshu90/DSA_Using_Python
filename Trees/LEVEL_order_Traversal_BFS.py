@@ -21,6 +21,8 @@ def levelOrder(root):
         print(root.val, end=' ')
         
         # Checking for further nodes left and right, if present, then appending them to the queue
+
+        # We can append in any order based on our QUESTION need... Right or left node.
         if root.left is not None:
             q.append(root.left)
             
