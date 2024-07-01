@@ -7,7 +7,7 @@
 # APPROACH 1 : Recursive DFS
 
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def maxDepth(self, root) -> int:
     
             # Base Case
             if root is None: 
@@ -30,7 +30,7 @@ class Solution:
 #         self.left = left
 #         self.right = right
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def maxDepth(self, root) -> int:
             
         if not root:
             return 0

@@ -7,7 +7,7 @@
 #  Then diameter is =  Height_left + Height_right.   
 
 class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+    def diameterOfBinaryTree(self, root) -> int:
 
         # Taking a global variable as an array 1st element. 
         # Using a list with a single element allows the code to maintain a mutable reference to the diameter value, enabling updates to it within the recursive function.
