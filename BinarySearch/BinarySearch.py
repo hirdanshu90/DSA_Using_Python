@@ -17,7 +17,7 @@ def binary_search (arr, item):
     mid = left + (right - left)//2
 
     if item == arr[mid]:
-      return "Value is present"
+      return "Value IS present"
     
     elif item > arr[mid]:
       left = mid + 1
@@ -26,10 +26,10 @@ def binary_search (arr, item):
       right = mid - 1
 
 
-  return "Value not present"
+  return "Value NOT present"
 
 
 arr = [3,6,7,9,12,22,44,56,76,98,101]
-item = 73
+item = 700
 
 print(binary_search(arr, item))
