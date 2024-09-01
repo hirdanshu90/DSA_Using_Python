@@ -11,7 +11,8 @@ class Solution:
 
 # isBalanced only returns boolean
 
-# Basically, recursion will do its job and find the height, main task is to compare and write the logic for balanced, checking 3 conditions for True case.
+# Basically, recursion will do its job and find the height, main task is to compare and write the logic for balanced, 
+# checking 3 conditions for True case.
 # Also see the array, how results are stored, rather than using variables
 
         def dfs(root):
@@ -37,7 +38,9 @@ class Solution:
         return dfs(root)[0]
 
 
-# In the Depth-First Search (DFS) function provided, the comparison of the left and right subtrees' balance status and height is done after the DFS calls for both the left and right subtrees have been made. This might give an impression that both are compared simultaneously, but in fact, they are not.
+# In the Depth-First Search (DFS) function provided, the comparison of the left and right subtrees
+# balance status and height is done after the DFS calls for both the left and right subtrees have been made. 
+# This might give an impression that both are compared simultaneously, but in fact, they are not.
 
 """
 

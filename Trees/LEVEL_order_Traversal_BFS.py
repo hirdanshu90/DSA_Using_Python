@@ -1,5 +1,6 @@
 # We need to print the nodes level by level. We process each level from left to right. 
-# Level Order Traversal technique is defined as a method to traverse a Tree such that all nodes present in the same level are traversed completely before traversing the next level.
+# Level Order Traversal technique is defined as a method to traverse a Tree such that ...
+# all nodes present in the same level are traversed completely before traversing the next level.
 
 # Level Order Traversal (Breadth First Search or BFS) of Binary Tree
 
@@ -53,15 +54,15 @@ class Solution:
         while q:
             current_arr = []
 
-            # Process all nodes at the current level
+            # Process all nodes at the current level, since initially length is decided...
             for _ in range(len(q)):
-                node = q.pop(0)  # Dequeue the front node
+                node = q.pop(0)  # Dequeue the front node, WE TAKE the NODE here
                 current_arr.append(node.val)  # Append the value of the current node
 
                 # Enqueue the left and right children of the current node
-                if node.left:
+                if node.left:      # WE TAKE the NODE here
                     q.append(node.left)
-                if node.right:
+                if node.right:      # WE TAKE the NODE here
                     q.append(node.right)
 
             arr.append(current_arr)  # Append the values of the current level to the result
